@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       width: {
         'main-md': '40rem',
-        'main-lg': '62rem'
+        'main-lg': '56rem'
       },
       colors: {
         'neon-turq': 	'	#52ffe1',

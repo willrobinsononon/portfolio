@@ -5,7 +5,7 @@ class PortfolioHeader extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-        <div class = "sticky top-0 w-full top-bar bg-black shadow-lg mb-5">
+        <div class = "sticky top-0 w-full top-bar bg-black shadow-lg mb-5 z-30">
             <div class = "flex flex-col sm:flex-row sm:items-end sm:justify-between pt-3 sm:pt-6 pb-2 font-sans ">
                 <div class="sm:ml-5 mb-3 sm:mb-0 text-center sm:text-left text-4xl cursor-default text-white">
                     Will Robinson

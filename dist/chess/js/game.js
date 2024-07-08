@@ -199,7 +199,6 @@ function newGame() {
     const boardSize = 8;
     const timeLimit = 5 * 60 * 10; //tenth of a second accuracy
     var squareSize = (document.getElementById("board").parentElement.getBoundingClientRect().width / 8) * 0.64;
-    console.log(squareSize)
 
     var gameState = {
         board: {},
