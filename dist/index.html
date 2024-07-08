@@ -10,11 +10,19 @@
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans">
 </head>
-<body>
-    <div class="h-screen main-background">
-        <portfolio-header></portfolio-header>
-        <div class=" h-auto">
-            Hey, I'm the page body!
+<body class="bg-main-background">
+    <portfolio-header></portfolio-header>
+    <div class="main-body">
+        <div class = "mb-5 text-center text-6xl sm:text-7xl font-serif cursor-default">
+            <span class="hover:text-neon-dark-purple">P</span><span class="hover:text-neon-dark-purple">r</span><span class="hover:text-neon-dark-purple">o</span><span class="hover:text-neon-dark-purple">j</span><span class="hover:text-neon-dark-purple">e</span><span class="hover:text-neon-dark-purple">c</span><span class="hover:text-neon-dark-purple">t</span><span class="hover:text-neon-dark-purple">s</span><hr class="w-52 my-3 mx-auto border-neon-dark-purple border-2">
+        </div>
+        <div class = "w-10/12 md:w-main-md lg:w-main-lg mx-auto p-5 bg-white rounded-xl border-light-purple border shadow-xl mb-8">
+            <div class = "mb-5 text-center text-4xl sm:text-5xl font-serif cursor-default">
+                Chess
+            </div>
+            <img class="m-auto" src="/static/chess_demo.gif">
+                Embeddable Chess game built in vanilla Javascript. Built with modularity in mind to allow for future implementation of chess variants.
+                <a href="/chess.html">Live Demo</a>
         </div>
     </div>
 </body>

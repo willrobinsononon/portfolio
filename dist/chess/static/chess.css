@@ -1,0 +1,198 @@
+body {
+    text-align: center;
+}
+
+#chess-container {
+    display: flex;
+    width: 70%;
+    width: 850px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#board {
+    background-image: url("chessboard.png");
+    background-size: cover;
+}
+
+
+#controls {
+    font-family: arial;
+    font-size: 18px;
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgb(239, 239, 239);
+    border-width: 2px;
+}
+
+#game-status {
+    font-weight: 700;
+    color: black;
+    user-select: none;
+    border-style: solid;
+    border-collapse:collapse;
+    border-color:rgb(239, 239, 239);
+    border-width: 1px;
+    padding: 10px 0px;
+}
+
+#flip-button {
+    background-color:rgb(37, 153, 255);
+}
+
+#new-game-button {
+    background-color:rgb(55, 255, 37);
+}
+
+.central-button {
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    border-style: solid;
+    border-collapse:collapse;
+    border-color: rgb(239, 239, 239);
+    border-width: 1px;
+}
+
+.individual-displays {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-display {
+    display: flex;
+}
+
+.side-display > {
+    flex-grow: 1;
+}
+
+.timer-display {
+    font-weight: 800;
+    font-size: 40px;
+    padding: 15px;
+}
+
+#board > * {
+    position: absolute;
+}
+
+.move-display {
+    background-color: rgba(20, 61, 85, 0.4);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.move-display-clear {
+    background-color: transparent;
+}
+
+.sel-display {
+    background-color: rgba(20, 61, 85, 0.05);
+}
+
+.promote-display {
+    background-color: rgba(152, 56, 255, 0.4);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.promotion-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.check-display {
+    background-color: rgba(255, 56, 56, 0.4);
+}
+
+.piece {
+    cursor: pointer;
+    z-index: 1;
+    background-size: cover;
+}
+
+.piece.disabled {
+    cursor: default;
+}
+
+.black.king {
+    background-image: url("pieces/black/king.png");
+}
+
+.black.queen {
+    background-image: url("pieces/black/queen.png");
+}
+
+.black.bishop {
+    background-image: url("pieces/black/bishop.png");
+}
+
+.black.knight {
+    background-image: url("pieces/black/knight.png");
+}
+
+.black.rook {
+    background-image: url("pieces/black/rook.png");
+}
+
+.black.pawn {
+    background-image: url("pieces/black/pawn.png");
+}
+
+.white.king {
+    background-image: url("pieces/white/king.png");
+}
+
+.white.queen {
+    background-image: url("pieces/white/queen.png");
+}
+
+.white.bishop {
+    background-image: url("pieces/white/bishop.png");
+}
+
+.white.knight {
+    background-image: url("pieces/white/knight.png");
+}
+
+.white.rook {
+    background-image: url("pieces/white/rook.png");
+}
+
+.white.pawn {
+    background-image: url("pieces/white/pawn.png");
+}
+
+#chess-container {
+    width: 100%;
+}
+
+.board-horizontal {
+    width: 64%;
+}
+
+.board-vertical {
+    width: 100%;
+}
+
+.chess-container-horizontal {
+    flex-direction:row;
+}
+
+.chess-container-vertical {
+    flex-direction:column;
+}
+
+.timer-display-vertical {
+    font-weight: 800;
+    font-size: 24px;
+    padding: 6px
+}
