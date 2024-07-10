@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/output.css" rel="stylesheet">
     <script src="/js/components/portfolio-header.js" type="text/javascript" defer></script>
+    <script src="/js/components/link-list.js" type="text/javascript" defer></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Crimson+Text">
         <link rel="stylesheet"
@@ -12,33 +13,39 @@
 </head>
 <body class="bg-main-background">
     <portfolio-header></portfolio-header>
+    <link-list></link-list>
     <div class="main-body">
         <div class = "mb-5 text-center text-6xl sm:text-7xl font-serif cursor-default">
-            <span class="hover:text-neon-dark-purple">P</span><span class="hover:text-neon-dark-purple">r</span><span class="hover:text-neon-dark-purple">o</span><span class="hover:text-neon-dark-purple">j</span><span class="hover:text-neon-dark-purple">e</span><span class="hover:text-neon-dark-purple">c</span><span class="hover:text-neon-dark-purple">t</span><span class="hover:text-neon-dark-purple">s</span><hr class="w-52 my-3 mx-auto border-neon-dark-purple border-2">
+            Projects
+            <hr class="w-52 my-3 mx-auto border-neon-dark-purple border-2">
         </div>
         <div class = "w-10/12 md:w-main-md lg:w-main-lg mx-auto p-5 bg-white rounded-xl border-light-purple border shadow-xl mb-8">
             <div class = "mb-5 text-center text-4xl sm:text-5xl font-serif cursor-default">
                 Chess
             </div>
-            <img class="m-auto mb-3" src="/static/chess_demo.gif">
+            <video class="m-auto mb-3" autoplay loop muted>
+                <source src="/static/chess_demo.mp4" type="video/mp4" />
+            </video>
             <p class="mx-5 lg:mx-10 mb-3" >Embeddable Chess game built in vanilla Javascript. Built with modularity in mind to allow for future implementation of chess variants.</p>
             <div class="flex flex-row justify-center gap-5 lg:gap-20 mx-5 lg:mx-10">
-                <a href="https://github.com/willrobinsononon/chess" class="flex flex-row"><img src="/static/code.png" class="h-5 mr-2 my-auto">Github</a>
-                <a href="/chess.html" class="flex flex-row "><img src="/static/eyes.png" class="h-5 mr-2 my-auto">Live Demo</a>
+                <a href="https://github.com/willrobinsononon/chess" class="flex flex-row group"><img src="/static/code.png" class="h-5 mr-2 my-auto"><span class="group-hover:font-bold">Github</span></a>
+                <a href="/chess.html" class="flex flex-row group"><img src="/static/eyes.png" class="h-5 mr-2 my-auto"><span class="group-hover:font-bold">Live Demo</span></a>
             </div>
        </div>
        <div class = "w-10/12 md:w-main-md lg:w-main-lg mx-auto p-5 bg-white rounded-xl border-light-purple border shadow-xl mb-8">
             <div class = "mb-5 text-center text-4xl sm:text-5xl font-serif cursor-default">
                 JobTracker
             </div>
-            <img class="m-auto mb-3" src="/static/JobTracker.png">
+            <video class="m-auto mb-3" autoplay loop muted>
+                <source src="/static/jobtracker_demo.mp4" type="video/mp4" />
+            </video>
             <p class="mx-5 lg:mx-10 mb-3" >Hybrid web application allowing users to store and track job applications and interviews. Backend built in Django
                 REST with the front end consisting of a single page react application served by a second Django app that also
                 handles users. Bootstrap is used for styling. Webpack/Babel/NPM toolchain in use for the react app. Provides
                 conditional styling to indicate application status, notifications to follow up on applications over two weeks old and a
                 consolidated personal interview calendar built with react-calendar.</p>
             <div class="flex flex-row justify-center gap-5 lg:gap-20 mx-5 lg:mx-10">
-                <a href="https://github.com/willrobinsononon/JobTracker" class="flex flex-row"><img src="/static/code.png" class="h-5 mr-2 my-auto">Github</a>
+                <a href="https://github.com/willrobinsononon/JobTracker" class="flex flex-row group"><img src="/static/code.png" class="h-5 mr-2 my-auto"><span class="group-hover:font-bold">Github</span></a>
             </div>
         </div>
         <div class = "w-10/12 md:w-main-md lg:w-main-lg mx-auto p-5 bg-white rounded-xl border-light-purple border shadow-xl mb-8">
@@ -50,8 +57,8 @@
                 team and wins for their rivals. Excuses for why the score isn't shown are picked at random. Built using the react-create-app environment, making requests to API-sports' football
                 API. Cookies handled in vanilla javascript, responsive styling created using vanilla css. Live demo will only display score data during the football season.</p>
             <div class="flex flex-row justify-center gap-5 lg:gap-20 mx-5 lg:mx-10">
-                <a href="https://github.com/willrobinsononon/FairWeather" class="flex flex-row"><img src="/static/code.png" class="h-5 mr-2 my-auto">Github</a>
-                <a href="/FairWeather/index.html" class="flex flex-row "><img src="/static/eyes.png" class="h-5 mr-2 my-auto">Live Demo</a>
+                <a href="https://github.com/willrobinsononon/FairWeather" class="flex flex-row group"><img src="/static/code.png" class="h-5 mr-2 my-auto"><span class="group-hover:font-bold">Github</span></a>
+                <a href="/FairWeather/index.html" class="flex flex-row group"><img src="/static/eyes.png" class="h-5 mr-2 my-auto"><span class="group-hover:font-bold">Live Demo</span></a>
             </div>
         </div>
     </div>
