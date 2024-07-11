@@ -17,7 +17,7 @@ class PortfolioHeader extends HTMLElement {
                                 projects
                         </li>
                         </a>
-                        <a href="/about.html">
+                        <a href="/about">
                             <li class="transition-all duration-200 hover:bg-light-green bg-transparent border-2 border-light-green hover:text-black text-light-green px-4 pb-1 rounded-xl font-semibold text-center">     
                                 about
                             </li>
